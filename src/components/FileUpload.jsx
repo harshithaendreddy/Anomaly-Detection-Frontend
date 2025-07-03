@@ -53,7 +53,7 @@ const FileUpload = () => {
     formData.append('file', uploadedFile);
 
     try {
-      const response = await axios.post('https://anomaly-detection-backend-5zl8.onrender.com', formData, {
+      const response = await axios.post('https://anomaly-detection-backend-5zl8.onrender.com/analyze', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
